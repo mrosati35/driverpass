@@ -1,2 +1,11 @@
-# driverpass
-Design documents for the DriverPass application
+This repository contains design documents for the fictional DriverPass application.
+
+The client for this project wanted a design for a web application that would help their customers prepare for their driver's license examination. They want a system that will let students buy instruction packages, schedule on-road lessons, and access online content including classes and practice tests. The system would also support functions specific to driving instructors (e.g., for providing written feedback on lessons) and to administrators (e.g., for updating the online content, administering accounts).
+
+One thing that went well on this project was the definition of requirements. They are specific and thorough enough that they could be imported into an enterprise issue-tracking tool like Jira and form the first stage of a product backlog for development. When all those issues were resolved, we would theoretically be done with the project.
+
+I wasn't happy with the UML use case diagram I first created. It was a tangled mess of crossing lines and tangled dependencies. I subsequently revised it by breaking it up into separate diagrams based on each kind of user's perspective, including only the use cases for that actor. While it involved some repetition of common use cases, each diagram was much easier to read as a result--and easier to read means easier to maintain.
+
+The user's needs are paramount in any design, because if you're not considering the user's needs when designing your project, whose needs are you fulfilling? It may be that they've asked the impossible due to a lack of technical knowledge, or that they are asking for mutually exclusive outcomes, but it's our job as designers to recognize those moments and help the customer see why they can't have the thing they asked for and help them find a solution that does meet their needs and that of their customers.
+
+While I've rarely been as formal in my design process as this, I've often followed similar patterns of thinking when designing software. It begins by analyzing the customer's and users' high-level needs--what goals does the system aim to meet? What needs is it meant to serve? Once we know that, we can start sketching out ideas for the different workflows that will be part of the application, and the workflows tend to lead us into the objects that will be necessary to represent program state and interactions. 
